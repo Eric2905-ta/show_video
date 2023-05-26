@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* background-image: linear-gradient(to right, #7f53ac 0, #657ced 100%); */
+    background-image: whitesmoke;
+}
+
+#container {
+    display: flex;
+    flex: 1;
+    height: 100%;
+}
+
+#video-info-container {
+    display: flex;
+    flex-direction: column;
+    flex: 65%;
+}
+
+#video-container {
+    position: relative;
+    height: 70vh;
+}
+
+#info-container {
+    background-color: linear-gradient(to right, #7f53ac 0, #657ced 100%);
+    /* background-color: whitesmoke; */
+    /* padding: 20px; */
+    text-align: center;
+    /* margin-top: 20px; */
+    /* width: 20%; */
+    height: 20%;
+
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.alert {
+    padding: 20px;
+    background-color: rgb(180, 180, 180);   
+    color: black;
+    margin-bottom: 15px;
+    border-radius: 25px;
+
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: black;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+#info-container h2 {
+    margin-top: 0;
+}
+
+#info-container table {
+    margin: 0 auto;
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#info-container th,
+#info-container td {
+    padding: 8px;
+    text-align: center;
+    border: none;
+    width: 620px;
+    
+
+}
+
+#alert-container {
+    flex: 35%;
+    background-color: linear-gradient(to right, #7f53ac 0, #657ced 100%);	
+    padding: 20px;
+    overflow-y: scroll;
+    height: 117vh; /* Set the height to 100% of the viewport height */
+    border-radius: 10px;
+   
+
+    
+}
+
+#alert-wrapper {
+    max-height: calc(117vh - 40px); /* 40px là tổng kích thước padding của #alert-container */
+    overflow-y: auto;
+}
+
+
+#myChart1 {
+    display: block !important;
+    box-sizing: border-box !important;
+    height: 300px !important;
+    width: 600px !important;
+    background-color: whitesmoke;
+    border-radius: 7px;
+  }
+
+  #background_chart {
+    display: flex;
+    justify-content: center;
+  }
+  
